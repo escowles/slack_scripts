@@ -6,6 +6,12 @@ one command.
 ## setup
 1. get an API token from https://api.slack.com/web
 
+1. make sure you have some basic utils installed:
+
+   * curl
+   * jq
+   * urlencode
+
 1. set some environment variables (`SLACK_API_TOKEN` is required for all operations, the others will be used
    by the `slack.in.sh` script):
 
