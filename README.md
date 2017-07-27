@@ -4,7 +4,7 @@ these are a few simple slack scripts to do things from the command-line, like se
 one command.
 
 ## setup
-1. get an API token from https://api.slack.com/web
+1. get an API token from https://api.slack.com/custom-integrations/legacy-tokens
 
 1. make sure you have some basic utils installed:
 
