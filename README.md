@@ -42,4 +42,4 @@ slack.post.sh foo this is the message
 
 ## limitations
 
-i think this only works with your first team.
+auth tokens only work with one team, and you need to switch the environment variable to post to another team.
