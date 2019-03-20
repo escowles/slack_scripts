@@ -6,5 +6,5 @@ else
   EMOJI=pizza
 fi
 
-slack.status.sh $EMOJI lunch
 slack.out.sh
+slack.status.sh $EMOJI lunch
