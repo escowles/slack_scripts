@@ -6,5 +6,5 @@ else
   MSG="back in a few"
 fi
 
-slack.status.sh brb $MSG
 slack.out.sh
+slack.status.sh brb $MSG
