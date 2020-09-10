@@ -1,4 +1,4 @@
 #!/bin/sh
 
 slack.client.sh users.setPresence?presence=away
-slack.status.sh
+slack.status.sh clear
