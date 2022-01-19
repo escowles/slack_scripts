@@ -11,4 +11,3 @@ fi
 
 slack.out.sh
 slack.status.sh $EMOJI lunch
-echo $EMOJI

@@ -15,6 +15,10 @@ else
   URL="users.profile.get?"
 fi
 STATUS=`slack.client.sh "$URL"`
+if [ "$EMOJI" == "clear" ]; then
+  exit
+fi
+
 STATUS_LABEL=`echo "$STATUS" | jq -r .profile.status_text`
 EMOJI_NAME=`echo "$STATUS" | jq -r .profile.status_emoji`
 if [ "$EMOJI_NAME" = ":house_with_garden:" ]; then
