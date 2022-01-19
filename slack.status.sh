@@ -47,6 +47,8 @@ elif [ "$EMOJI_NAME" = ":face_with_thermometer:" ]; then
   STATUS_EMOJI="🤒"
 elif [ "$EMOJI_NAME" = ":palm_tree:" ]; then
   STATUS_EMOJI="🌴"
+elif [ "$EMOJI_NAME" = "" ]; then
+  STATUS_EMOJI=""
 else
   STATUS_EMOJI="❓"
 fi
