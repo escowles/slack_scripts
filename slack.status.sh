@@ -21,38 +21,5 @@ fi
 
 STATUS_LABEL=`echo "$STATUS" | jq -r .profile.status_text`
 EMOJI_NAME=`echo "$STATUS" | jq -r .profile.status_emoji`
-if [ "$EMOJI_NAME" = ":house_with_garden:" ]; then
-  STATUS_EMOJI="🏡"
-elif [ "$EMOJI_NAME" = ":burrito:" ]; then
-  STATUS_EMOJI="🌯"
-elif [ "$EMOJI_NAME" = ":hamburger:" ]; then
-  STATUS_EMOJI="🍔"
-elif [ "$EMOJI_NAME" = ":pancakes:" ]; then
-  STATUS_EMOJI="🥞"
-elif [ "$EMOJI_NAME" = ":pizza:" ]; then
-  STATUS_EMOJI="🍕"
-elif [ "$EMOJI_NAME" = ":sandwich:" ]; then
-  STATUS_EMOJI="🥪"
-elif [ "$EMOJI_NAME" = ":stew:" ]; then
-  STATUS_EMOJI="🍲"
-elif [ "$EMOJI_NAME" = ":taco:" ]; then
-  STATUS_EMOJI="🌮"
-elif [ "$EMOJI_NAME" = ":pie:" ]; then
-  STATUS_EMOJI="🥧"
-elif [ "$EMOJI_NAME" = ":brb:" ]; then
-  STATUS_EMOJI="😴"
-elif [ "$EMOJI_NAME" = ":princeton:" ]; then
-  STATUS_EMOJI="🛡"
-elif [ "$EMOJI_NAME" = ":calendar:" ]; then
-  STATUS_EMOJI="📅"
-elif [ "$EMOJI_NAME" = ":face_with_thermometer:" ]; then
-  STATUS_EMOJI="🤒"
-elif [ "$EMOJI_NAME" = ":palm_tree:" ]; then
-  STATUS_EMOJI="🌴"
-elif [ "$EMOJI_NAME" = "" ]; then
-  STATUS_EMOJI=""
-else
-  STATUS_EMOJI="❓"
-fi
-
+STATUS_EMOJI=$(label.to.emoji.sh "$EMOJI_NAME")
 echo "$STATUS_EMOJI $STATUS_LABEL"
