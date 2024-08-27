@@ -22,4 +22,5 @@ fi
 STATUS_LABEL=`echo "$STATUS" | jq -r .profile.status_text`
 EMOJI_NAME=`echo "$STATUS" | jq -r .profile.status_emoji`
 STATUS_EMOJI=$(label.to.emoji.sh "$EMOJI_NAME")
-echo "$STATUS_EMOJI $STATUS_LABEL"
+DATE=`date +"%m/%d %H:%M %p"`
+echo "$DATE: $STATUS_EMOJI $STATUS_LABEL"
