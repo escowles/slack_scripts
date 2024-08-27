@@ -17,6 +17,8 @@ elif [ "$EMOJI_NAME" = ":stew:" ]; then
   echo "🍲"
 elif [ "$EMOJI_NAME" = ":taco:" ]; then
   echo "🌮"
+elif [ "$EMOJI_NAME" = ":burrito:" ]; then
+  echo "🌯"
 elif [ "$EMOJI_NAME" = ":pie:" ]; then
   echo "🥧"
 elif [ "$EMOJI_NAME" = ":brb:" ]; then
