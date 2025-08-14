@@ -31,6 +31,8 @@ elif [ "$EMOJI_NAME" = ":face_with_thermometer:" ]; then
   echo "🤒"
 elif [ "$EMOJI_NAME" = ":palm_tree:" ]; then
   echo "🌴"
+elif [ "$EMOJI_NAME" = ":green_salad:" ]; then
+  echo "🥗"
 elif [ "$EMOJI_NAME" = "" ]; then
   echo ""
 else
